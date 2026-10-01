@@ -1,0 +1,32 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "transaction": {
+      "date": "2026-09-28",
+      "payee": "Amazon.co.jp",
+      "memo": "Anker USB-C ハブ 7-in-1",
+      "amount_jpy": 3980
+    },
+    "business": "個人事業。Web サービスと YouTube の制作・運営"
+  },
+  "questions": {
+    "account": {
+      "type": "choice",
+      "instructions": "`transaction` を `business` の帳簿に仕訳するとき、最も適切な勘定科目はどれか。",
+      "criteria": {
+        "消耗品費": "10万円未満の備品・パソコン周辺機器・文具など",
+        "通信費": "インターネット回線、携帯電話、サーバー、ドメイン",
+        "新聞図書費": "書籍、雑誌、電子書籍、ニュースの購読",
+        "旅費交通費": "電車、タクシー、出張の移動・宿泊",
+        "接待交際費": "取引先との飲食、贈答品",
+        "支払手数料": "振込手数料、決済手数料、各種サービス手数料",
+        "広告宣伝費": "広告出稿、プロモーション",
+        "事業主貸": "事業と関係のない私的な支出"
+      }
+    },
+    "is_business": {
+      "type": "noul",
+      "instructions": "`transaction` は `business` の事業に使うための支出である可能性が高いか。"
+    }
+  }
+}
