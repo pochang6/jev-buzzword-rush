@@ -8,3 +8,6 @@ videos/
 # その他
 __pycache__/
 .DS_Store
+
+# 記事づくりの素材（Codex 向け。公開リポジトリには入れない）
+article-assets/
